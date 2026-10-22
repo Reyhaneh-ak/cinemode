@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سینمود | فیلمی برای حال خوب</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+<div class="welcome-screen" id="welcome-screen">
+
+    <div class="welcome-logo">🎬 Cinemood</div>
+
+    <div class="welcome-emojis">
+        <span class="happy">😄</span>
+        <span class="sad">😢</span>
+        <span class="angry">😡</span>
+        <span class="surprised">😲</span>
+        <span class="calm">😌</span>
+    </div>
+
+    <div class="welcome-text">
+        <h1>سینمود</h1>
+        <h2>فیلمی برای حال خوبت</h2>
+        <p>
+            با انتخاب احساست، فیلمی رو ببین
+            که هم‌حال توست...
+        </p>
+
+        <button id="start-intro" class="start-intro">
+             ورود به دنیای سینمود
+        </button>
+    </div>
+
+</div>
+
+<div class="site-content">
+
+
+    <header class="navbar">
+        <a href="#" class="logo">🎬 سینمود</a>
+
+        <nav>
+            <a href="#home">خانه</a>
+            <a href="#movies">فیلم‌ها</a>
+            <a href="#about">درباره ما</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <p class="eyebrow">دنیای فیلم، دنیای احساس</p>
+
+            <h1>سینمود</h1>
+
+            <h2>فیلمی برای حال خوبت</h2>
+
+            <p class="description">
+                فقط کافیه حال و هوات رو بهم بگی،
+                ما فیلم مناسب تو رو پیدا می‌کنیم.
+            </p>
+
+            <a href="#movies" class="main-button">
+                کشف فیلم‌ها
+            </a>
+        </section>
+
+    <section id="movies" class="movies-section">
+            <h2>قراره چه فیلمی ببینیم؟</h2>
+            <p>الان چه احساسی داری؟</p>
+        
+  <input type="text"  id="movie-search"  placeholder="اسم فیلم رو فارسی یا انگلیسی بنویس...">
+
+     <div class="mood-buttons">
+            <button data-mood="happy">😊 شاد</button>
+            <button data-mood="sad">😢 غمگین</button>
+            <button data-mood="angry">😡 عصبانی</button>
+            <button data-mood="surprise">😲 هیجان‌زده</button>
+            <button data-mood="neutral">😌 آروم</button>
+        </div>
+        
+         
+    <select id="genre-filter">
+        <option value="">همه ژانرها</option>
+        <option value="action">اکشن</option>
+        <option value="comedy">کمدی</option>
+        <option value="drama">درام</option>
+        <option value="animation">انیمیشن</option>
+        <option value="adventure">ماجراجویی</option>
+        <option value="romance">عاشقانه</option>
+        <option value="thriller">هیجان‌انگیز</option>
+        <option value="sci-fi">علمی‌تخیلی</option>
+    </select>
+
+        <select id="sort-filter">
+        <option value="">مرتب‌سازی پیش‌فرض</option>
+        <option value="rating-desc">بیشترین امتیاز ⭐</option>
+        <option value="year-desc">جدیدترین سال 📅</option>
+    </select>
+       
+         
+    <h3>فیلم‌های مورد علاقه من ❤️</h3>
+   <div id="favorite-results"></div>
+   <div id="movie-results"></div>
+
+    </section>
+
+       
+    </main>
+
+    <footer id="about">
+        <p>سینمود؛ هر احساس، یک داستان 🎞️</p>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
